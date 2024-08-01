@@ -117,18 +117,17 @@ const PostCard = ({ uid, id, logo, name, email, text, image, timestamp }) => {
       <div className="flex flex-col py-4 bg-white rounded-t-3xl">
         <div className="flex justify-start items-center pb-4 pl-4 ">
           <Avatar
-            size="sm"
-            variant="circular"
+          className="rounded-3xl w-10"
             src={logo || avatar}
             alt="avatar"
           ></Avatar>
 
           <div className="flex flex-col ml-4">
-            <p className=" py-2 font-roboto font-medium text-sm text-gray-700 no-underline tracking-normal leading-none">
+            <p className=" py-2 font-roboto font-medium text-[12px] text-gray-700 no-underline tracking-normal leading-none">
               {email}
             </p>
-            <p className=" font-roboto font-medium text-sm text-gray-700 no-underline tracking-normal leading-none">
-              Published: {timestamp}
+            <p className=" font-roboto font-medium text-[12px] text-gray-700 no-underline tracking-normal leading-none">
+              {timestamp}
             </p>
           </div>
           {user?.uid !== uid && (
@@ -136,11 +135,7 @@ const PostCard = ({ uid, id, logo, name, email, text, image, timestamp }) => {
               onClick={addUser}
               className="w-full flex justify-end cursor-pointer mr-10"
             >
-              <img
-                className="hover:bg-blue-100 rounded-xl p-2"
-                src={addFriend}
-                alt="addFriend"
-              ></img>
+              
             </div>
           )}
         </div>
@@ -149,7 +144,7 @@ const PostCard = ({ uid, id, logo, name, email, text, image, timestamp }) => {
             {text}
           </p>
           {image && (
-            <img className="h-[500px] w-full" src={image} alt="postImage"></img>
+            <img className="h-[300px] w-full" src={image} alt="postImage"></img>
           )}
         </div>
         <div className="flex justify-around items-center pt-4">

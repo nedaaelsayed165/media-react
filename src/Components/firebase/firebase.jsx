@@ -3,13 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSdKY8_ntETsn2hevvpRE3c3vU76ZhNkw",
-  authDomain: "project-react-b5b1a.firebaseapp.com",
-  projectId: "project-react-b5b1a",
-  storageBucket: "project-react-b5b1a.appspot.com",
-  messagingSenderId: "564218490551",
-  appId: "1:564218490551:web:c4987700860e59f747e732",
-  measurementId: "G-EW5MR3FPYD"
+  apiKey: "AIzaSyC0IUSTC9CXfVs4x-H_c4NQwwGngn0camE",
+  authDomain: "my-posts-4e1e2.firebaseapp.com",
+  projectId: "my-posts-4e1e2",
+  storageBucket: "my-posts-4e1e2.appspot.com",
+  messagingSenderId: "1065749717975",
+  appId: "1:1065749717975:web:1664e0bb3ba9795de26192"
 };
 
 const app = initializeApp(firebaseConfig);
