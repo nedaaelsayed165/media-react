@@ -8,9 +8,9 @@ const Comment = ({ name, comment, image }) => {
     <div className=" flex items-center mt-2 w-full">
       <div className="mx-2">
         <Avatar
-          // size="sm"
+        
           alt="avatar"
-          // variant="circular"
+       
           className="rounded-full w-10"
           src={image || avatar}
         ></Avatar>

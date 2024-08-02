@@ -66,7 +66,7 @@ const Login = () => {
   return (
     <>
       {loading ? (
-        <div className="grid grid-cols-1 justify-items-center items-center h-screen">
+        <div className=" grid grid-cols-1 justify-items-center items-center h-screen">
           <ClipLoader color="#367fd6" size={150} speedMultiplier={0.5} />
         </div>
       ) : (
@@ -74,7 +74,7 @@ const Login = () => {
           <Card className="w-[400px] bg-slate-50">
             <CardHeader
               variant="gradient"
-              // color="blue"
+             
               className="bg-orange-200 mb-4 grid h-28 place-items-center "
             >
               <Typography className="text-sm " color="black">
@@ -128,7 +128,7 @@ const Login = () => {
                 <Button
                   variant="gradient"
                   fullWidth
-                  className="mb-4 border-2 bg-orange-200"
+                  className="mb-4 border-2 bg-orange-200 text-black"
                   type="submit"
                 >
                   Login
@@ -139,16 +139,12 @@ const Login = () => {
               <Button
                 variant="gradient"
                 fullWidth
-                className="mb-4 border-2 bg-orange-200"
+                className="mb-4 border-2 bg-orange-200 text-black"
                 onClick={signInWithGoogle}
               >
                 Sign In with Google
               </Button>
-              {/* <Link to="/reset">
-                <p className="ml-1 font-bold font-roboto text-[10px] text-orange-400 text-left ">
-                Forgot the password ?
-                </p>
-              </Link> */}
+             
               <div className="mt-0 flex items-center font-roboto text-[10px] justify-center">
                 Dont have an account?
                 <Link to="/register">

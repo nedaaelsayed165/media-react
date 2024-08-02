@@ -41,7 +41,7 @@ const Main = () => {
   const { user, userData } = useContext(AuthContext);
   const text = useRef("");
   const scrollRef = useRef("");
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState("");
   const [file, setFile] = useState(null);
   const collectionRef = collection(db, "posts");
   const postRef = doc(collection(db, "posts"));

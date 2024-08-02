@@ -1,10 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import Register from "./Regsiter";
 import Reset from "./Reset";
-import FriendProfile from "./FriendProfile";
+// import FriendProfile from "./FriendProfile";
 
 const Pages = () => {
   return (
@@ -14,10 +15,10 @@ const Pages = () => {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="reset" element={<Reset></Reset>}></Route>
-        <Route
+        {/* <Route
           path="/profile/:id"
           element={<FriendProfile></FriendProfile>}
-        ></Route>
+        ></Route> */}
       </Routes>
     </div>
   );

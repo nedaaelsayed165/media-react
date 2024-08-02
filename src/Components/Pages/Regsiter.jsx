@@ -72,25 +72,25 @@ const Regsiter = () => {
           <ClipLoader color="#367fd6" size={150} speedMultiplier={0.5} />
         </div>
       ) : (
-        <div className="bg-slate-600 grid grid-cols-1 justify-items-center items-center h-screen">
+        <div className="bg-orange-200 grid grid-cols-1 justify-items-center items-center h-screen">
           <Card className="w-96">
             <CardHeader
-              variant="gradient"
-              color="blue"
-              className="mb-4 grid h-28 place-items-center"
+             
+              className="bg-black mb-4 grid h-28 place-items-center"
             >
               <Typography variant="h3" color="white">
                 REGISTER
               </Typography>
             </CardHeader>
-            <CardBody className="flex flex-col gap-4">
+            <CardBody className="flex flex-col mb-3 gap-4">
               <form onSubmit={handleRegister}>
-                <div className="mb-2">
+                <div className="mb-5">
+                <label className="mb-2 p-2 text-black">Name</label>
                   <Input
                     name="name"
                     type="text"
-                    label="Name"
-                    size="lg"
+               
+                    className="mb-5 py-3 p-3 text-black"
                     {...formik.getFieldProps("name")}
                   />
                 </div>
@@ -101,11 +101,12 @@ const Regsiter = () => {
                     </Typography>
                   )}
                 </div>
-                <div className="mt-4 mb-2">
+                <div className="mt-4 mb-4">
+                  <label className="mb-2 p-2 text-black">Email</label>
                   <Input
                     name="email"
                     type="email"
-                    label="Email"
+                   
                     size="lg"
                     {...formik.getFieldProps("email")}
                   />
@@ -118,10 +119,11 @@ const Regsiter = () => {
                   )}
                 </div>
                 <div className="mt-4 mb-2">
+                <label className="mb-2 p-2 text-black">Password</label>
                   <Input
                     name="password"
                     type="password"
-                    label="Password"
+                 
                     size="lg"
                     {...formik.getFieldProps("password")}
                   />
@@ -137,17 +139,17 @@ const Regsiter = () => {
                   variant="gradient"
                   fullWidth
                   type="submit"
-                  className="mb-4"
+                  className="mb-4 bg-black"
                 >
                   Register
                 </Button>
               </form>
             </CardBody>
             <CardFooter className="pt-0">
-              <div className="mt-6 flex font-roboto text-base  justify-center">
+              <div className="mt-6 flex font-roboto text-[12px]  justify-center">
                 Already have an account?
                 <Link to="/login">
-                  <p className="ml-1 font-bold font-roboto text-base text-blue-500 text-center">
+                  <p className="ml-1 font-bold font-roboto text-[12px] text-orange-400 text-center">
                     Login
                   </p>
                 </Link>
