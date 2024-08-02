@@ -79,21 +79,22 @@ const Main = () => {
     }
   };
 
-  const storage = getStorage();
-
-  const metadata = {
-    contentType: [
-      "image/jpeg",
-      "image/jpg",
-      "image/png",
-      "image/gif",
-      "image/svg+xml",
-    ],
-  };
-
   const submitImage = async () => {
+    const storage = getStorage();
+
+    const metadata = {
+      contentType: [
+        "image/jpeg",
+        "image/jpg",
+        "image/png",
+        "image/gif",
+        "image/svg+xml",
+      ],
+    };
+
     const fileType = metadata.contentType.includes(file["type"]);
     if (!file) return;
+    console.log(file);
     if (fileType) {
       try {
         const storageRef = ref(storage, `images/${file.name}`);
